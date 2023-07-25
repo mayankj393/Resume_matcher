@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Resume Matcher</title>
+  <style>
+	body{
+	 background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  	 background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     font-family: "Open Sans", sans-serif;
+     color: #333333;
+	}
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Resume Matcher.</h1>
+		<p>This website helps you to find the best resume from the multiple resumes </p>
+		
+			<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+	
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<form class="form" method="POST" action="/login" enctype="multipart/form-data">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="{{url_for('static',filename='/templates/sign_up.html')}}">Creat Your Account</a> it takes less than a minute</p>
+		<div class="inputs">
+			
+            <br>
+            <input type="email" placeholder="Email Adress" name="email">
+			<br>
+			<input type="password" placeholder="password" name="password">
+           
+			  
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+	<label>
+		<input type="checkbox" name="item" checked/>
+		<span class="text-checkbox">Remember me</span>
+	</label>
+			<p>forget password?</p>
+		</div>
+			
+			<br>
+			<button>Login</button>
+		</form>
+	</div>
+	
+</div>
+<!-- partial -->
+  
+</body>
+</html>
